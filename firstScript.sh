@@ -1,19 +1,13 @@
 #!/bin/bash
 
-echo "---------------"
-
-git status
-
-echo "---------------"
-
-sleep 5
-
-ls
-
-echo "---------------"
-
-sleep 5
-
-pwd
-
-echo "---------------"
+filename='subFolder/test.py'
+n=1
+while read line; do
+# reading each line
+echo "Line No. $n : $line"
+n=$((n+1))
+if (($n == 6)); then
+    echo hello $line
+    break
+fi
+done < $filename
