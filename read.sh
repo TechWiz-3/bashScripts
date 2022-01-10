@@ -1,10 +1,10 @@
 #!/bin/sh
-echo "Type something and press enter: ";
-a="yis"
-read ans
-if (("$a"=="yis")) ; then
-echo hallo;
-fi
+# echo "Type something and press enter: ";
+# a="yis"
+# read ans
+# if (("$a"=="yis")) ; then
+# echo hallo;
+# fi
 
 echo "Do that? [Y,n]"
 read input
