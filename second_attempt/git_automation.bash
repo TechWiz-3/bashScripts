@@ -18,7 +18,6 @@ read file
 while [ "$file" != "x" ]
     do
     file_path=$(/bin/pwd)
-    echo "$file_path/$file"
     if [ "$file" == "all" ]
         then
         git add .
@@ -43,6 +42,5 @@ if [ "$ans" == "y" ]
     sleep 4
     git status
 else
-    echo "Git push cancelled"
-    say "Git push cancelled"
+    convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
 fi
