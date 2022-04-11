@@ -34,7 +34,7 @@ convey "Enter commit message -r 10" "Commit message: " "Alice"
 read commit_message
 git commit -m "$commit_message"
 sleep 3
-convey "Git status displayed below" "------------------------------------------------------------------------" "Moira"
+convey "Git status displayed below" $seperate "Moira"
 sleep 1
 git status
 echo $seperate
@@ -44,7 +44,7 @@ read push
 echo $seperate
 if [ "$push" == "y" ]
     then
-    say "Pushing changes"
+    convey "Pushing changes" "PUSH CHANGES..." "Karen"
     git push
     sleep 4
     echo $seperate
