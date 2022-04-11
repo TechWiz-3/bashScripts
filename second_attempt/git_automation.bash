@@ -15,6 +15,14 @@ echo """
  \____|___| |_|    \____|\___/___|_| \_|
 """
 afplay /Users/Peregrine/Downloads/dana_start.m4a
+sleep 1
+echo $seperate
+convey "Git status shown below" "GIT STATUS..." "Daniel"
+sleep 1
+git status
+sleep 1
+echo $seperate
+sleep 2
 convey "Enter the file path from current D I R... Also, X to escape the loop -r 10" "File: " "Fiona"
 read file
 while [ "$file" != "x" ]
