@@ -59,5 +59,5 @@ if [ "$push" == "y" ]
 else
     convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
 fi
-say "Programming shutting down, thank you and see you next time -v Alex -r 230"
+say -v Alex -r 23 "Programming shutting down, thank you and see you next time"
 afplay /Users/Peregrine/Downloads/winterspell_30s.m4a
