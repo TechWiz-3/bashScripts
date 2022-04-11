@@ -5,6 +5,8 @@ convey () {
     echo $2
 }  
 
+seperate="------------------------------------------------------------------------"
+
 echo """
   ____ ___ _____    ____  ___ ___ _   _ 
  / ___|_ _|_   _|  / ___|/ _ \_ _| \ | |
@@ -34,17 +36,18 @@ git commit -m "$commit_message"
 sleep 3
 convey "Git status displayed below" "------------------------------------------------------------------------" "Moira"
 sleep 1
-echo "------------------------------------------------------------------------"
 git status
+echo $seperate
 sleep 3
 convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
 read push
+echo $seperate
 if [ "$push" == "y" ]
     then
     say "Pushing changes"
     git push
     sleep 4
-    echo "------------------------------------------------------------------------"
+    echo $seperate
     git status
 else
     convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
