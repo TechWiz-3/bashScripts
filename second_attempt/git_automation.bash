@@ -15,7 +15,7 @@ echo """
 afplay /Users/Peregrine/Downloads/dana_start.m4a
 convey "Enter the file path from current D I R... Also, X to escape the loop -r 10" "File: " "Fiona"
 read file
-while [ "$file" != "X" ]
+while [ "$file" != "x" ]
     do
     file_path=$(/bin/pwd)
     echo "$file_path/$file"
@@ -29,15 +29,13 @@ while [ "$file" != "X" ]
     fi
 done
 #afplay /Users/Peregrine/Downloads/winterspell.m4a &
-convey "Enter commit message" "Commit message: " "Alice"
+convey "Enter commit message -r 10" "Commit message: " "Alice"
 read commit_message
 git commit -m "$commit_message"
 git status
 sleep 3
 convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
 read ans
-#if [$ans -e "y"]
-#if (($ans = "y"))
 if [ "$ans" == "y" ]
     then
     say "Pushing changes"
