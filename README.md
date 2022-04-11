@@ -1,3 +1,3 @@
 # BashScripts
 Messing around with some UNIX bash scripts for fun  
-It seems there are some issues with running linux scripting on MAC... so yeah
+Had a lot of trouble in my initial attempt, will be simplifying, starting with small projects and working my way up this time.
