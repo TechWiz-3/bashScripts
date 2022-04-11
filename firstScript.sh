@@ -4,19 +4,17 @@ filename='subFolder/test.py'
 n=1
 while read line ; do
 # reading each line
-# echo "Line No. $n : $line"
-n=$((n+1))
-if (($n == 6)) ; then
-    echo -n Do you wish to proceed with this? [y/n]
-    read ans
-    echo $ans
-    if [[ $ans == "y" ]] ; then
-        echo --- Git Commit In Progress---
-        echo $line
-        sleep 2
-        echo --- Git Push---
-        break
-    fi
+    n=$((n+1))
+    if (($n == 6)) ; then
+        echo "Do you wish to proceed with this? [y/n]"
+        read input
+    # if [[ $input == "y" ]] ; then
+    #     echo --- Git Commit In Progress---
+    #     echo $line
+    #     sleep 2
+    #     echo --- Git Push---
+    #     break
+    # fi
 
 
     # echo --- Git Add ---

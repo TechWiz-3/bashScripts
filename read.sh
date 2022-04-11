@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # echo "Type something and press enter: ";
 # a="yis"
 # read ans
