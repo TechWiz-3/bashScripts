@@ -32,16 +32,19 @@ convey "Enter commit message -r 10" "Commit message: " "Alice"
 read commit_message
 git commit -m "$commit_message"
 sleep 3
-convey "Git status" "------------------" "Moira"
+convey "Git status displayed below" "------------------------------------------------------------------------" "Moira"
+sleep 1
+echo "------------------------------------------------------------------------"
 git status
 sleep 3
 convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
-read ans
-if [ "$ans" == "y" ]
+read push
+if [ "$push" == "y" ]
     then
     say "Pushing changes"
     git push
     sleep 4
+    echo "------------------------------------------------------------------------"
     git status
 else
     convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
