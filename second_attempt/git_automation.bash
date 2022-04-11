@@ -23,7 +23,7 @@ while [ "$file" != "x" ]
         git add .
     else
         git add "$file_path/$file"
-        echo "File: "
+        convey "Enter another file to add... Or leave with the lowercase letter x -r 8" "File: " "Daniel"
         read file
     fi
 done
@@ -31,6 +31,8 @@ done
 convey "Enter commit message -r 10" "Commit message: " "Alice"
 read commit_message
 git commit -m "$commit_message"
+sleep 3
+convey "Git status" "------------------" "Moira"
 git status
 sleep 3
 convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
