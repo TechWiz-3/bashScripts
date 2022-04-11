@@ -37,7 +37,6 @@ while [ "$file" != "x" ]
         read file
     fi
 done
-#afplay /Users/Peregrine/Downloads/winterspell.m4a &
 convey "Enter commit message -r 10" "Commit message: " "Alice"
 read commit_message
 git commit -m "$commit_message"
@@ -46,7 +45,7 @@ convey "Git status displayed below" $seperate "Moira"
 sleep 1
 git status
 echo $seperate
-sleep 3
+sleep 2
 convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
 read push
 echo $seperate
@@ -60,3 +59,5 @@ if [ "$push" == "y" ]
 else
     convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
 fi
+say "Programming shutting down, thank you and see you next time -v Alex -r 230"
+afplay /Users/Peregrine/Downloads/winterspell_30s.m4a
