@@ -12,3 +12,5 @@ git status
 sleep 3
 echo "Push changes? [y/n]"
 read ans
+sleep 4
+git status
