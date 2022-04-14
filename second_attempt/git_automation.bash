@@ -39,10 +39,12 @@ while [ "$file" != "x" ]
 done
 convey "Enter commit message -r 10" "Commit message: " "Alice"
 read commit_message
+echo "GIT COMMIT"
 git commit -m "$commit_message"
 sleep 3
 convey "Git status displayed below" $seperate "Moira"
 sleep 1
+echo "GIT STATUS"
 git status
 echo $seperate
 sleep 2
