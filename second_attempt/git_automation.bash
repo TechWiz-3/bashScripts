@@ -38,7 +38,34 @@ new_commit () {
     git status
     echo $seperate
     sleep 2
-    
+    convey "Lowercase Y to create another commit... Lowercase N to proceed to pushing changes -r 8" "Create another commit? [y/n]" "Daniel"
+    read answer
+    if [ "$answer" == "y" ]
+        then
+        new_commit
+    else
+        git_push
+        say -v Alex -r 230 "Program shutting down, thank you and see you next time"
+        afplay /Users/Peregrine/Downloads/winterspell_30s.m4a
+    fi
+
+    }
+
+git_push () {
+    convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
+        read push
+        echo $seperate
+        if [ "$push" == "y" ]
+            then
+            convey "Pushing changes" "PUSH CHANGES..." "Karen"
+            git push
+            sleep 4
+            echo $seperate
+            git status
+        else
+            convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
+        fi
+
 }
 seperate="------------------------------------------------------------------------"
 
@@ -89,19 +116,7 @@ if [ "$answer" == "y" ]
     then
     new_commit
 else
-    convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
-    read push
-    echo $seperate
-    if [ "$push" == "y" ]
-        then
-        convey "Pushing changes" "PUSH CHANGES..." "Karen"
-        git push
-        sleep 4
-        echo $seperate
-        git status
-    else
-        convey "Git push cancelled -r 12" "Git push cancelled" "Karen"
-    fi
+    git_push
     say -v Alex -r 230 "Program shutting down, thank you and see you next time"
     afplay /Users/Peregrine/Downloads/winterspell_30s.m4a
 fi
