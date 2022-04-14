@@ -85,8 +85,8 @@ echo $seperate
 sleep 2
 convey "Lowercase Y to create another commit... Lowercase N to proceed to pushing changes -r 8" "Create another commit? [y/n]" "Daniel"
 read answer
-if [ "$answer" == "y"]
-    do
+if [ "$answer" == "y" ]
+    then
     new_commit
 else
     convey "Push changes... Y or N?" "Push changes? [y/n]" "Fiona"
