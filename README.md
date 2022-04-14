@@ -1,4 +1,7 @@
 # BashScripts
+Time spent on this repo, all time:  
+[![wakatime](https://wakatime.com/badge/user/ca36faea-acc3-45d7-acc1-fb14861b9144/project/d5a7ec75-8ed0-4d18-9e68-0e9a7cd0e60d.svg?style=for-the-badge)](https://wakatime.com/badge/user/ca36faea-acc3-45d7-acc1-fb14861b9144/project/d5a7ec75-8ed0-4d18-9e68-0e9a7cd0e60d)  
+Hours spent on the repo this week:  
 [![wakatime](https://wakatime.com/badge/github/TechWiz-3/bashScripts.svg?style=for-the-badge)](https://wakatime.com/badge/github/TechWiz-3/bashScripts)  
 
 Messing around with some UNIX bash scripts for fun  
