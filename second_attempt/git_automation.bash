@@ -65,6 +65,5 @@ say -v Alex -r 230 "Program shutting down, thank you and see you next time"
 afplay /Users/Peregrine/Downloads/winterspell_30s.m4a
 
 
-"""the real deal, pushing main
-ensuring a new version number and commit message = line 6 + any other changes can be manually added
-"""
+#the real deal, pushing main
+#ensuring a new version number and commit message = line 6 + any other changes can be manually added
