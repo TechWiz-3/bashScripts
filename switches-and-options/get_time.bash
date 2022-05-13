@@ -6,6 +6,18 @@ do
     case $arguement in
         -c|--color|--colour)
         use_color="true" ;;
+
+        -h|--help)
+        echo "Simple script that posts the current date and time"
+        echo
+        echo "Syntax: bash get_time.bash <arguements>"
+        echo "options:"
+        echo "-h or --help      shows this message"
+        echo "-c or --color     uses a purple color to display the date"
+        echo
+        exit 1
+        ;;
+
         *)
         echo "unknown arguement"
         exit 1
