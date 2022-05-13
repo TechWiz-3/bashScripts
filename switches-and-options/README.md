@@ -1,0 +1,1 @@
+Learning about script options from [here](https://www.redhat.com/sysadmin/arguments-options-bash-scripts) while working on some scripts in my automation repo.
