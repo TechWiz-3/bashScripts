@@ -24,14 +24,17 @@ Help()
 ############################################################
 # Process the input options. Add options as needed.        #
 ############################################################
-while getopts ":hev" option; do
+while getopts ":hevf" option; do
     case $option in
     h) 
         Help
         exit ;;
     e)
         echo "you selected e"
-        exit ;;
+        ;;
+    f)
+        echo "you selected f"
+        ;;
     \?) # Invalid option
         echo "Error: Invalid option"
         exit ;;
